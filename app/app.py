@@ -45,8 +45,8 @@ st.markdown(
     """
     <style>
         body {
-            background-color: #e6f7ff; /* Light blue */
-            background-image: linear-gradient(to bottom, #e6f7ff, #ffffff); /* Gradient to white */
+            background-color: #f0fff0; /* Light green */
+            background-image: linear-gradient(to bottom, #f0fff0, #ffffff); /* Gradient to white */
         }
         .reportview-container {
             flex-direction: row;
