@@ -45,8 +45,14 @@ st.markdown(
     """
     <style>
         body {
-            background-color: #f0fff0; /* Light green */
-            background-image: linear-gradient(to bottom, #f0fff0, #ffffff); /* Gradient to white */
+            background: linear-gradient(135deg, #ff00cc, #00ffcc, #ffcc00); /* Neon color gradient */
+            background-size: 600% 600%; /* Increase the gradient size for more pronounced colors */
+            animation: gradientAnimation 20s ease infinite; /* Animation for color movement */
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         .reportview-container {
             flex-direction: row;
@@ -55,7 +61,7 @@ st.markdown(
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            background-color: white; /* Adjust background color of components */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for readability */
         }
     </style>
     """,
