@@ -46,15 +46,9 @@ st.markdown(
     <style>
         body {
             background: linear-gradient(135deg, #ff00cc, #00ffcc, #ffcc00); /* Neon color gradient */
-            background-size: 600% 600%; /* Increase the gradient size for more pronounced colors */
-            animation: gradientAnimation 20s ease infinite; /* Animation for color movement */
-        }
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
         }
         .reportview-container {
+            background-color: transparent; /* Ensure transparency for the gradient to show */
             flex-direction: row;
         }
         .css-1aumxhk {
