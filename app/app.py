@@ -19,8 +19,12 @@ def send_image_to_api(image):
 
     return response.json()
 
+# Set page title and background color
+st.set_page_config(page_title='Waste Identification App', layout='wide', initial_sidebar_state='collapsed')
 
-st.write('Welcome to my app')
+# Define app layout and content
+st.title('Waste Identification App')
+st.write('Welcome to my app. Upload a picture of an item you want to be identified for waste.')
 
 picture = st.camera_input("Take a picture of an item you want to be identified for waste.")
 
@@ -35,3 +39,20 @@ if picture is not None:
 
     # Display the prediction result
     st.write("Prediction:", result["class_name"])
+
+# Custom CSS for styling
+st.markdown(
+    """
+    <style>
+        .reportview-container {
+            background: #f0f0f0;
+        }
+        .css-1aumxhk {
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
