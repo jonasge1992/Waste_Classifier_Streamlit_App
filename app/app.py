@@ -45,12 +45,13 @@ st.markdown(
     """
     <style>
         .reportview-container {
-            background: #f0f0f0;
+            background: linear-gradient(to bottom, #e6f7ff, #ffffff); /* Soft blue gradient */
         }
         .css-1aumxhk {
             padding: 10px;
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: white; /* Adjust background color of components */
         }
     </style>
     """,
