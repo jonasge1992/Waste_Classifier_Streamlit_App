@@ -45,17 +45,18 @@ st.markdown(
     """
     <style>
         body {
-            background: linear-gradient(135deg, #ff00cc, #00ffcc, #ffcc00); /* Neon color gradient */
+            background-color: #1e1e1e; /* Dark grey background */
+            color: #ffffff; /* White text */
         }
         .reportview-container {
-            background-color: transparent; /* Ensure transparency for the gradient to show */
+            background-color: transparent; /* Ensure transparency for the background color to show */
             flex-direction: row;
         }
         .css-1aumxhk {
             padding: 10px;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for readability */
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* White shadow for dark theme */
+            background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent dark grey for readability */
         }
     </style>
     """,
