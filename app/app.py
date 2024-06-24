@@ -44,8 +44,12 @@ if picture is not None:
 st.markdown(
     """
     <style>
+        body {
+            background-color: #e6f7ff; /* Light blue */
+            background-image: linear-gradient(to bottom, #e6f7ff, #ffffff); /* Gradient to white */
+        }
         .reportview-container {
-            background: linear-gradient(to bottom, #e6f7ff, #ffffff); /* Soft blue gradient */
+            flex-direction: row;
         }
         .css-1aumxhk {
             padding: 10px;
