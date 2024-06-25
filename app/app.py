@@ -45,12 +45,11 @@ st.markdown(
     """
     <style>
         body {
-            background-color: #1e1e1e; /* Dark grey background */
+            background-color: #1e1e1e !important; /* Dark grey background */
             color: #ffffff; /* White text */
         }
         .reportview-container {
             background-color: transparent; /* Ensure transparency for the background color to show */
-            flex-direction: row;
         }
         .css-1aumxhk {
             padding: 10px;
